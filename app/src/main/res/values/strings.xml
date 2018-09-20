@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Encuesta Restaurante</string>
+
+    <!-- BUTTONS-->
+    <string name="btnRegistra">Registra encuesta</string>
+    <string name="btnSeleccionarComida">Seleccionar comida</string>
+    <string name="btnRestaurantes">Restaurantes</string>
+    <string name="btnGuardar">Guardar</string>
+
+    <!-- CHECKBOXES-->
+    <string name="chkCarnes">Carnes</string>
+    <string name="chkEnsaladas">Ensaladas</string>
+    <string name="chkPastas">Pastas</string>
+
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".MainActivity">
+
+
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/MainButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:fab_addButtonColorNormal="@color/colorDarkPurple"
+        app:fab_addButtonColorPressed="@color/colorPurple"
+        app:fab_addButtonPlusIconColor="#ffff"
+        app:fab_labelStyle="@style/menu_labels_style"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.96">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnRegistrarEncuesta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="btnRegistrarOnClick"
+            app:fab_icon="@drawable/ic_chart"
+            android:tooltipText="@string/btnRegistra"
+            app:fab_colorNormal="@color/colorPurple"
+            app:fab_colorPressed="@color/colorDarkPurple"
+            app:fab_size="mini"
+            app:fab_title="@string/btnRegistra"
+             />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnSeleccionarComida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="btnSeleccionarOnClick"
+            app:fab_title="@string/btnSeleccionarComida"
+            app:fab_icon="@drawable/ic_diet"
+            app:fab_colorNormal="@color/colorPurple"
+            app:fab_colorPressed="@color/colorDarkPurple"
+            app:fab_size="mini"
+            app:layout_constraintBottom_toTopOf="@+id/btnRestaurante"
+            />
+
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnRestaurante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="btnRestauranteOnClick"
+            app:fab_icon="@drawable/ic_menu"
+            app:fab_title="@string/btnRestaurantes"
+            app:fab_colorNormal="@color/colorPurple"
+            app:fab_colorPressed="@color/colorDarkPurple"
+            app:fab_size="mini"
+            app:layout_constraintBottom_toTopOf="@+id/MainButton"
+             />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnLista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="btnViewListaEncuestadoClick"
+            app:fab_colorNormal="@color/colorPurple"
+            app:fab_colorPressed="@color/colorDarkPurple"
+            app:fab_icon="@drawable/ic_verification_of_delivery_list_clipboard_symbol"
+            app:fab_size="mini"
+            app:layout_constraintBottom_toTopOf="@+id/MainButton" />
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+</android.support.constraint.ConstraintLayout>

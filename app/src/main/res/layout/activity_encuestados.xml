@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Encuestados">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/Linear">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Nombre" />
+
+        <EditText
+            android:id="@+id/txbNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Escriba el nombre"
+            android:layout_alignParentRight="true"
+            android:layout_toStartOf="@+id/textView4"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/Linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/Linear2"
+        >
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:text="Apellido:"
+            />
+
+        <EditText
+            android:id="@+id/txbApellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Escriba el apellido"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/Linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/Linear3"
+        >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:text="Edad: "
+            />
+
+        <EditText
+            android:id="@+id/txbEdad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Escriba la edad"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/Linear3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/Linear4"
+        >
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:text="Fecha: "
+            />
+
+        <EditText
+            android:id="@+id/txbFecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pulse para añadir fecha"
+            android:onClick="txbFechaOnClick"/>
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:onClick="btnGuardarOnClick"
+        android:text="@string/btnGuardar" />
+
+
+</RelativeLayout>
